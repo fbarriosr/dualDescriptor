@@ -18,7 +18,7 @@ $ tar -xvf  dualDescriptor.tar
 ```
 También puedes crear un alias en $ .bashrc. Utiliza un editor de texto 
 ```
-vi ~.bashrc
+$ vi ~.bashrc
 ```
 Y agrega esta ultima linea: 
 ```
