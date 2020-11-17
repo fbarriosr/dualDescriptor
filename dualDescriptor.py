@@ -356,9 +356,9 @@ factor = int(listProjectGauss[nproject].getP())
 t1 = inputFile1.find('_')
 
 if (factor == 1):
-    outputFile = inputFile1[0:t1]+"_F+_FDA.cub"
+    outputFile = inputFile1[0:t1]+"_F+F_FDA.cub"
 else:
-    outputFile = inputFile1[0:t1]+"_pro_F+_FDA.cub"
+    outputFile = inputFile1[0:t1]+"_pro_F+F_FDA.cub"
 
 step4 = Stage31(inputFile1,inputFile2,outputFile)
 
@@ -395,7 +395,7 @@ if factor > 1:
 
 
     inputFile  = step4.getOutputFile()
-    outputFile = inputFile1[0:t1]+"_F+_FDA.cub"
+    outputFile = inputFile1[0:t1]+"_F+F_FDA.cub"
 
     step42 = Stage32(inputFile,outputFile,factor)
 
@@ -448,9 +448,9 @@ factor = int(listProjectGauss[nproject].getQ())
 t1 = inputFile1.find('_')
 
 if (factor == 1):
-    outputFile = inputFile1[0:t1]+"_F-_FDA.cub"
+    outputFile = inputFile1[0:t1]+"_F-F_FDA.cub"
 else:
-    outputFile = inputFile1[0:t1]+"_pro_F-_FDA.cub"
+    outputFile = inputFile1[0:t1]+"_pro_F-F_FDA.cub"
 
 step5 = Stage31(inputFile1,inputFile2,outputFile)
 
@@ -487,7 +487,7 @@ if factor > 1:
 
 
     inputFile  = step5.getOutputFile()
-    outputFile = inputFile1[0:t1]+"_F-_FDA.cub"
+    outputFile = inputFile1[0:t1]+"_F-F_FDA.cub"
 
     step52 = Stage32(inputFile,outputFile,factor)
 
@@ -535,7 +535,7 @@ else:
 inputFile1 = filesOutList[0]
 inputFile2 = filesOutList[1]
 
-outputFile = inputFile1.replace("_F+_FDA.cub", "_DD_FDA.cub")
+outputFile = inputFile1.replace("_F+F_FDA.cub", "_DD_FDA.cub")
 
 step6 = Stage31(inputFile1,inputFile2,outputFile)
 
