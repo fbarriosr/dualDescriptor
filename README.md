@@ -1,6 +1,7 @@
 ## DualDescriptor
 
-Es un proyecto "UNIX" para automatizar las rutinas del software Gaussian. Debido a que este presenta una sintaxis compleja para los usuarios no habituados a la programación, lo cual lleva a errores y a perdida de tiempo en entender cómo utilizar el programa.
+Genera archivos .cub visualizables con el programa GaussView o cualquier otro capaz de leer archivos .cub provenientes de Gaussian. Corresponden a los campos escalares de las funciones de Fukui nucleofílica, Fukui electrofílica y al descriptor dual.  Por cada sistema molecular, requiere como alimentación de tres archivos .fchk correspondientes al sistema con N, N+p y N-q electrones. Utilizable solo en servidores con sistema operativo Linux y siempre tenga instalados y operativos
+los programas Gaussian y sus complementarios cubegen y cubman.
 
 ## Requerimientos
 
